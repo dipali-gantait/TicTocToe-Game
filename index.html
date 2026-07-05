@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Main Container -->
+    <!-- ========================= -->
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <h1 class="logo">
+                Tic Tac Toe
+            </h1>
+
+            <p class="subtitle">
+                Classic Game • HTML • CSS • JavaScript
+            </p>
+
+        </header>
+
+        <!-- Game Card -->
+        <section class="game-card">
+
+            <!-- Status -->
+            <div class="status">
+
+                <span class="status-icon">❌</span>
+
+                <span class="status-text">
+                    Player X Turn
+                </span>
+
+            </div>
+
+            <!-- Board -->
+            <div class="board">
+
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+
+            </div>
+
+            <!-- Winner -->
+            <div class="winner">
+
+                🏆 Winner :
+                <span class="winner-name">
+                    -
+                </span>
+
+            </div>
+
+            <!-- Restart Button -->
+            <button class="restart-btn">
+
+                🔄 Restart Game
+
+            </button>
+
+        </section>
+
+        <!-- Score Board -->
+        <section class="score-board">
+
+            <div class="score-card">
+
+                <h3>X Wins</h3>
+
+                <p id="x-score">0</p>
+
+            </div>
+
+            <div class="score-card">
+
+                <h3>O Wins</h3>
+
+                <p id="o-score">0</p>
+
+            </div>
+
+            <div class="score-card">
+
+                <h3>Draw</h3>
+
+                <p id="draw-score">0</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
